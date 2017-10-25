@@ -25,33 +25,34 @@ class AmazonproductsSpider(Spider):
     start_urls = []
 
     # START HARD CODED SECTION -get category URLs
-    # Earbud Headphones
+    # Activity tracker
     category_start_url = [
-        'https://www.amazon.com/b/ref=lp_172541_ln_0?node=12097478011&ie=UTF8&qid=1508730723']
+        'https://www.amazon.com/b/ref=s9_acss_bw_cg_WTSHEAD_1a1_w?node=8849526011&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-1&pf_rd_r=1TEVA3TGV0JNYZ1K4W8Q&pf_rd_t=101&pf_rd_p=4896a448-8d92-4aa5-bab1-30c5b5c3b3ac&pf_rd_i=10048700011']
 
-    category_URL_list = ["https://www.amazon.com/s/ref=lp_12097478011_pg_" + str(i) +
-                         "?rh=n%3A172282%2Cn%3A%21493964%2Cn%3A172541%2Cn%3A12097478011&page=" + str(i) +
-                         "&ie=UTF8&qid=1508730739" for i in range(2, 401)]
+    category_URL_list = ["https://www.amazon.com/s/ref=lp_8849526011_pg_" + str(i) +
+                         "?rh=n%3A8849526011&page=" + str(i) +
+                         "&ie=UTF8&qid=1508886262" for i in range(2, 7)]
 
     start_urls = start_urls + category_start_url + category_URL_list  # add new links
 
-    # On-ear Headphones
+    # Sports/ GPS Watches
     category_start_url = [
-        'https://www.amazon.com/On-Ear-Headphones/b/ref=sn_gfs_co_coins_12097480011_2?ie=UTF8&node=12097480011&pf_rd_p=28d73b43-f35e-4996-90fe-fb4130c98842&pf_rd_r=4VJ9ANC8CP0Q8MB6WVC5&pf_rd_s=home-audio-subnav-flyout-content-2&pf_rd_t=SubnavFlyout']
+        'https://www.amazon.com/b/ref=s9_acss_bw_cg_WTSHEAD_1b1_w?node=8916179011&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-1&pf_rd_r=YVPE7RRS0XW63SXQJ98G&pf_rd_t=101&pf_rd_p=6330968a-454b-4d9e-9b58-296a6545826c&pf_rd_i=8849526011']
 
-    category_URL_list = ["https://www.amazon.com/s/ref=lp_12097480011_pg_" + str(i) +
-                         "?rh=n%3A172282%2Cn%3A%21493964%2Cn%3A172541%2Cn%3A12097480011&page=" + str(i) +
-                         "&ie=UTF8&qid=1508731077" for i in range(2, 227)]
+    category_URL_list = ["https://www.amazon.com/s/ref=lp_8916179011_pg_" + str(i) +
+                         "?rh=n%3A172282%2Cn%3A%2113900851%2Cn%3A%212334089011%2Cn%3A%212334151011%2Cn%3A8916179011&page=" + str(
+        i) +
+                         "&ie=UTF8&qid=1508886536" for i in range(2, 128)]
 
     start_urls = start_urls + category_start_url + category_URL_list  # add new links
 
-    # Over-ear Headphones
+    # Smart watches
     category_start_url = [
-        'https://www.amazon.com/Over-Ear-Headphones/b/ref=sn_gfs_co_coins_12097479011_3?ie=UTF8&node=12097479011&pf_rd_p=28d73b43-f35e-4996-90fe-fb4130c98842&pf_rd_r=YHPFTPPV99V769NNBQEY&pf_rd_s=home-audio-subnav-flyout-content-2&pf_rd_t=SubnavFlyout']
+        'https://www.amazon.com/b/ref=s9_acss_bw_cg_WTSHEAD_1c1_w?node=7939901011&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-1&pf_rd_r=G43X3YCSEK3VERXDXDKN&pf_rd_t=101&pf_rd_p=008c91d9-d829-4d59-a153-d947968afc2f&pf_rd_i=8916179011']
 
-    category_URL_list = ["https://www.amazon.com/s/ref=lp_12097479011_pg_" + str(i) +
-                         "?rh=n%3A172282%2Cn%3A%21493964%2Cn%3A172541%2Cn%3A12097479011&page=" + str(i) +
-                         "&ie=UTF8&qid=1508731230" for i in range(2, 401)]
+    category_URL_list = ["https://www.amazon.com/s/ref=lp_7939901011_pg_" + str(i) +
+                         "?rh=n%3A172282%2Cn%3A%21493964%2Cn%3A10048700011%2Cn%3A7939901011&page=" + str(i) +
+                         "&ie=UTF8&qid=1508886637" for i in range(2, 302)]
 
     start_urls = start_urls + category_start_url + category_URL_list  # add new links
     # END HARD CODED SECTION
